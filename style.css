@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EBEBEB;
+    font-family: "Kulim Park";
+}
+
+
+/* Head - Hola / Conocimentos / Proyectos / Contacto */
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 0 40px 0 #bebebe;
+}
+
+.barra-nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2.5;
+    margin-right: 20px;
+}
+
+
+/* saqué el line-height de la pagina de ADA para funcionar bien */
+
+li {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+
+a.link-nav {
+    text-decoration: none;
+    color: #292929;
+}
+
+a.link-nav:hover {
+    color: #f8cf61;
+}
+
+a.link-nav1,
+.contact {
+    background-color: #82b5a5;
+    border-radius: 100px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.link-nav1:hover {
+    color: #f8cf61;
+}
+
+
+/* Section1 - Hola, Mi nombre es ... */
+
+.info-hola {
+    padding: 100px 40px 100px;
+    display: flex;
+    text-align: center;
+}
+
+.regra-about {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px 50px;
+}
+
+.info-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-hola {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+
+.nombre {
+    color: #f36b7f;
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.text-info {
+    color: #3D3D3D;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.button {
+    background-color: #82b5a5;
+    padding: 15px 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-info {
+    width: 100%;
+    height: auto;
+}
+
+
+/*  Section2 - Mis conocimentos ... */
+
+.info-conocimentos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8cf61;
+    padding: 150px 200px 150px;
+}
+
+.init-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-skills {
+    font-size: 45px;
+    font-weight: 900;
+    color: #292929;
+    padding: 15px 0 15px;
+}
+
+.title-skills {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3D3D3D;
+}
+
+.text-skills {
+    display: block;
+    max-width: 400px;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+
+/* male, mi solucion fue poner vw en width */
+
+.regras-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.info-skills {
+    color: #3D3D3D;
+    background-color: #fff;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 40px;
+}
+
+
+/*  Section3 - Quote... */
+
+.quote {
+    background-color: #82b5a5;
+    display: flex;
+    justify-content: center;
+    padding: 200px 200px;
+}
+
+.regras-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-quote {
+    display: block;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+.h2-quote {
+    font-size: 20px;
+    font-weight: 600;
+    color: #292929;
+}
+
+
+/*  Section4 - Mis proyectos... */
+
+.info-proyectos {
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+}
+
+.init-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-projects {
+    color: #292929;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.nav-projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ul-projects {
+    line-height: 2.5;
+}
+
+.menu-projects {
+    text-decoration: none;
+    color: #292929;
+}
+
+.regras-projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.info-projects {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.title-projects {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+/*  Footer  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 60px;
+    background-color: #f36b7f;
+    color: #ffffff;
+}
+
+.barra-footer {
+    display: flex;
+    margin: 0;
+}
+
+
+/*  Media Query */
+
+@media (max-width: 600px) {
+    .barra-nav {
+        display: none;
+    }
+    .regra-about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
