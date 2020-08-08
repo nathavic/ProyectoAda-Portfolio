@@ -14,7 +14,13 @@ body {
 }
 
 
+/******/
+
+
 /* Head - Hola / Conocimentos / Proyectos / Contacto */
+
+
+/******/
 
 header {
     background-color: #ffffff;
@@ -27,6 +33,10 @@ header {
     justify-content: flex-end;
     line-height: 2.5;
     margin-right: 20px;
+}
+
+.menu-hamburguesa {
+    display: none;
 }
 
 
@@ -63,13 +73,13 @@ a.link-nav1:hover {
 
 /* Section1 - Hola, Mi nombre es ... */
 
-.info-hola {
+.section-hola {
     padding: 100px 40px 100px;
     display: flex;
     text-align: center;
 }
 
-.regra-about {
+.regla-about {
     display: flex;
     align-items: center;
     padding: 50px 0px 50px;
@@ -118,9 +128,15 @@ a.link-nav1:hover {
 }
 
 
+/******/
+
+
 /*  Section2 - Mis conocimentos ... */
 
-.info-conocimentos {
+
+/******/
+
+.section-conocimentos {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -152,7 +168,7 @@ a.link-nav1:hover {
 
 .text-skills {
     display: block;
-    max-width: 400px;
+    width: 300px;
     color: #3D3D3D;
     text-align: center;
 }
@@ -160,7 +176,7 @@ a.link-nav1:hover {
 
 /* male, mi solucion fue poner vw en width */
 
-.regras-skills {
+.reglas-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -172,53 +188,69 @@ a.link-nav1:hover {
 .info-skills {
     color: #3D3D3D;
     background-color: #fff;
-    border: 1px solid #dddfe5;
+    border: 3px outset #82b5a5;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 40px;
+    margin: 12px;
+    padding: 15px;
 }
+
+
+/******/
 
 
 /*  Section3 - Quote... */
 
-.quote {
+
+/******/
+
+.section-quote {
     background-color: #82b5a5;
     display: flex;
     justify-content: center;
     padding: 200px 200px;
 }
 
-.regras-quote {
+.reglas-quote {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .text-quote {
-    display: block;
+    display: flex;
+    font-size: 25px;
     color: #3D3D3D;
     text-align: center;
+    margin: 100px;
 }
 
 .h2-quote {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 900;
     color: #292929;
 }
 
 
+/******/
+
+
 /*  Section4 - Mis proyectos... */
 
-.info-proyectos {
-    padding: 110px 40px 130px;
+
+/******/
+
+.section-proyectos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 30px 120px;
 }
 
 .init-projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .h2-projects {
@@ -229,48 +261,63 @@ a.link-nav1:hover {
     padding: 40px;
 }
 
-.grid-projects {
-    display: flex;
-    justify-content: center;
+button,
+button:focus {
+    border: 0;
+    outline: none;
+}
+
+button:hover {
+    color: #f8cf61;
 }
 
 .nav-projects {
     display: flex;
-    justify-content: flex-end;
-}
-
-.ul-projects {
-    display: flex;
-    justify-content: space-between;
-    line-height: 2.5;
+    justify-content: space-evenly;
+    margin: 40px;
+    padding: 0 90px 0;
 }
 
 .menu-projects {
     text-decoration: none;
     color: #292929;
+    font-size: 20px;
+    line-height: 0.9;
 }
 
-.regras-projects {
-    width: 100%;
+.reglas-projects {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    justify-content: center;
 }
 
 .info-projects {
+    background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
-    overflow: hidden;
+    padding: 7px;
+    margin: 10px;
 }
 
-.title-projects {
-    font-weight: 600;
-    margin-top: 20px;
+.info-projects:hover {
+    border: 3px solid #f8cf61;
 }
+
+
+/* Cuando coloco el mouse en cima del icono con el hover, las imagenes se desplazan un poco, no se como sacar. */
+
+.title-projects {
+    font-size: 20px;
+}
+
+
+/******/
 
 
 /*  Footer  */
+
+
+/******/
 
 footer {
     display: flex;
@@ -288,14 +335,25 @@ footer {
 }
 
 
+/******/
+
+
 /*  Media Query */
 
+
+/******/
+
 @media (max-width: 600px) {
-    .barra-nav {
-        display: none;
-    }
     .regra-about {
         display: flex;
         flex-wrap: wrap;
+    }
+    .link-nav,
+    .contact {
+        display: none;
+    }
+    .menu-hamburguesa {
+        display: block;
+        margin-right: 20px;
     }
 }
