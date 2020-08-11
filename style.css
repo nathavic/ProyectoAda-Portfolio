@@ -346,6 +346,9 @@ footer {
 
 /******/
 
+
+/* quedó una barra al lado, no se como sacarla :( */
+
 @media (max-width: 600px) {
     .regra-about {
         display: flex;
