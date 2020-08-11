@@ -13,7 +13,7 @@ HTML5 - CSS3 (FlexBox) - RESPONSIVE
 
 # Module 1 Ada Project (EN)
 
-## xConclusion exercise of the first module of Ada.
+## Conclusion exercise of the first module of Ada.
 
 In this module I learned how to make my first web and to start a career of develop web. 
 
