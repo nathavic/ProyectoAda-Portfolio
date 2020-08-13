@@ -378,6 +378,6 @@ footer {
     }
     .nav-projects,
     .nav-footer {
-        flex-wrap: wrap
+        flex-wrap: wrap;
     }
 }
