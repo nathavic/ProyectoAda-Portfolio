@@ -369,4 +369,15 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .info-projects {
+        margin: 10px 0;
+    }
+    .section-conocimentos,
+    .section-quote {
+        padding: 80px 10px;
+    }
+    .nav-projects,
+    .nav-footer {
+        flex-wrap: wrap
+    }
 }
