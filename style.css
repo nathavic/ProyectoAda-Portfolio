@@ -320,6 +320,9 @@ button:hover {
 /* no me quedó tan centrado como gustaria, el parrafo "hecho con amor.." se ve fora de centro*/
 
 
+/* No veo fuera de centro al parrafo, pero si a las imagenes, y eso es porque <ul> agrega un margin-left. 
+Lo podes sacar diciendole a ese ul margin:0 */
+
 /******/
 
 footer {
