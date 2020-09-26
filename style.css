@@ -1,383 +1,395 @@
-@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #EBEBEB;
-    font-family: "Kulim Park";
+  background-color: #ebebeb;
+  font-family: "Kulim Park";
 }
-
 
 /******/
 
-
 /* Head - Hola / Conocimentos / Proyectos / Contacto */
-
 
 /******/
 
 header {
-    background-color: #ffffff;
-    padding: 10px 0;
-    box-shadow: 0 0 40px 0 #bebebe;
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 0 40px 0 #bebebe;
 }
 
-.barra-nav {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 2.5;
-    margin-right: 20px;
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 2.5;
+  margin-right: 20px;
 }
 
 .menu-hamburguesa {
-    display: none;
+  display: none;
 }
 
+.container-responsive {
+  position: relative;
+}
+
+.menu-responsive {
+  background-color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-605px);
+  position: absolute;
+  width: 100%;
+  transition: 1s;
+}
+
+.show-menu {
+  transform: translateY(0);
+  position: relative;
+}
+
+.menu-responsive ul a {
+  margin: 0;
+  text-decoration: none;
+  color: #292929;
+}
+
+.menu-responsive ul a:hover {
+  color: #f8cf61;
+}
 
 /* saqué el line-height de la pagina de ADA para funcionar bien */
 
 li {
-    display: flex;
-    list-style: none;
-    margin: 10px;
+  display: flex;
+  list-style: none;
+  margin: 10px;
 }
 
 a.link-nav {
-    text-decoration: none;
-    color: #292929;
+  text-decoration: none;
+  color: #292929;
 }
 
 a.link-nav:hover {
-    color: #f8cf61;
+  color: #f8cf61;
 }
 
 a.link-nav1,
 .contact {
-    background-color: #82b5a5;
-    border-radius: 100px;
-    padding: 0 20px;
-    text-decoration: none;
-    color: #ffffff;
+  background-color: #82b5a5;
+  border-radius: 100px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a.link-nav1:hover {
-    color: #f8cf61;
+  color: #f8cf61;
 }
-
 
 /* Section1 - Hola, Mi nombre es ... */
 
 .section-hola {
-    padding: 100px 40px 100px;
-    display: flex;
-    text-align: center;
+  padding: 100px 40px 100px;
+  display: flex;
+  text-align: center;
 }
 
 .regla-about {
-    display: flex;
-    align-items: center;
-    padding: 50px 0px 50px;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px 50px;
 }
 
 .info-about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title-hola {
-    font-size: 30px;
-    font-weight: 700;
-    padding-bottom: 10px;
-    margin: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  margin: 5px;
 }
 
 .nombre {
-    color: #f36b7f;
-    font-family: "Merriweather";
-    font-weight: 900;
-    font-size: 60px;
-    margin-bottom: 25px;
+  color: #f36b7f;
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 25px;
 }
 
 .text-info {
-    color: #3D3D3D;
-    font-size: 16px;
-    margin-bottom: 30px;
-    text-align: start;
+  color: #3d3d3d;
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: start;
 }
 
 .button {
-    background-color: #82b5a5;
-    padding: 15px 40px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #82b5a5;
+  padding: 15px 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-info {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 
 /******/
 
-
 /*  Section2 - Mis conocimentos ... */
-
 
 /******/
 
 .section-conocimentos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #f8cf61;
-    padding: 150px 200px 150px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8cf61;
+  padding: 150px 200px 150px;
 }
 
 .init-skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 730px;
 }
 
-.h2-skills {
-    font-family: "Merriweather";
-    font-size: 45px;
-    font-weight: 900;
-    color: #292929;
-    padding: 15px 0 15px;
+.title-principal-skills {
+  font-family: "Merriweather";
+  font-size: 45px;
+  font-weight: 900;
+  color: #292929;
+  padding: 15px 0 15px;
 }
 
-.title-skills {
-    font-size: 20px;
-    font-weight: 600;
-    color: #3D3D3D;
+.title-interno-skills {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3d3d3d;
 }
 
 .text-skills {
-    display: block;
-    width: 300px;
-    color: #3D3D3D;
-    text-align: center;
+  display: block;
+  width: 300px;
+  color: #3d3d3d;
+  text-align: center;
 }
-
 
 /* male, mi solucion fue poner vw en width */
 
 .reglas-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
-    width: 100%;
-    max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .info-skills {
-    color: #3D3D3D;
-    background-color: #fff;
-    border: 3px outset #82b5a5;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    margin: 12px;
-    padding: 15px;
+  color: #3d3d3d;
+  background-color: #fff;
+  border: 3px outset #82b5a5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  padding: 15px;
 }
-
 
 /******/
 
-
 /*  Section3 - Quote... */
-
 
 /******/
 
 .section-quote {
-    background-color: #82b5a5;
-    display: flex;
-    justify-content: center;
-    padding: 200px 200px;
+  background-color: #82b5a5;
+  display: flex;
+  justify-content: center;
+  padding: 200px 200px;
 }
 
 .reglas-quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-quote {
-    display: flex;
-    font-size: 25px;
-    color: #3D3D3D;
-    text-align: center;
-    margin: 100px;
+  display: flex;
+  font-size: 25px;
+  color: #3d3d3d;
+  text-align: center;
+  margin: 100px;
 }
 
-.h2-quote {
-    font-size: 50px;
-    font-weight: 900;
-    color: #292929;
+.title-quote {
+  font-size: 50px;
+  font-weight: 900;
+  color: #292929;
 }
-
 
 /******/
 
-
 /*  Section4 - Mis proyectos... */
-
 
 /******/
 
 .section-proyectos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 30px 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 30px 120px;
 }
 
 .init-projects {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.h2-projects {
-    font-family: "Merriweather";
-    color: #292929;
-    font-size: 45px;
-    font-weight: 900;
-    padding: 40px;
+.title-principal-projects {
+  font-family: "Merriweather";
+  color: #292929;
+  font-size: 45px;
+  font-weight: 900;
+  padding: 40px;
 }
 
 button,
 button:focus {
-    border: 0;
-    outline: none;
+  border: 0;
+  outline: none;
 }
 
 button:hover {
-    color: #f8cf61;
+  color: #f8cf61;
 }
 
-.nav-projects {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px;
-    padding: 0 90px 0;
+.container-projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+  padding: 0 90px 0;
 }
 
 .menu-projects {
-    text-decoration: none;
-    color: #292929;
-    font-size: 20px;
-    line-height: 0.9;
+  text-decoration: none;
+  color: #292929;
+  font-size: 20px;
+  line-height: 0.9;
 }
 
 .reglas-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .info-projects {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 7px;
-    margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 7px;
+  margin: 10px;
 }
 
 .info-projects:hover {
-    border: 3px solid #f8cf61;
+  border: 3px solid #f8cf61;
+  padding: 5px;
 }
-
 
 /* Cuando coloco el mouse en cima del icono con el hover, las imagenes se desplazan un poco, no se como sacar. */
 
-.title-projects {
-    font-size: 20px;
+.title-interno-projects {
+  font-size: 20px;
 }
-
 
 /******/
 
-
 /*  Footer  */
-
 
 /* no me quedó tan centrado como gustaria, el parrafo "hecho con amor.." se ve fora de centro*/
 
+/* No veo fuera de centro al parrafo, pero si a las imagenes, y eso es porque <ul> agrega un margin-left. 
+Lo podes sacar diciendole a ese ul margin:0 */
 
 /******/
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 50px 100px;
-    background-color: #f36b7f;
-    color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px 100px;
+  background-color: #f36b7f;
+  color: #ffffff;
 }
 
-.nav-footer {
-    display: flex;
-    margin: 10px;
-    align-self: center;
+.list-footer {
+  display: flex;
+  margin: 10px;
+  align-self: center;
 }
-
 
 /******/
-
 
 /*  Media Query */
 
-
 /******/
-
 
 /* quedó una barra al lado, no se como sacarla :( */
 
-@media (max-width: 600px) {
-    .regra-about {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .link-nav,
-    .contact {
-        display: none;
-    }
-    .menu-hamburguesa {
-        display: block;
-        margin-right: 20px;
-    }
-    .regla-about {
-        flex-direction: column;
-    }
-    .reglas-projects {
-        flex-direction: column;
-        align-items: center;
-    }
-    .info-projects {
-        margin: 10px 0;
-    }
-    .section-conocimentos,
-    .section-quote {
-        padding: 80px 10px;
-    }
-    .nav-projects,
-    .nav-footer {
-        flex-wrap: wrap;
-    }
+@media (max-width: 870px) {
+  .regra-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .link-nav,
+  .contact {
+    display: none;
+  }
+  .menu-hamburguesa {
+    display: block;
+    margin-right: 20px;
+  }
+  .regla-about {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .reglas-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-projects {
+    margin: 10px 0;
+  }
+  .section-conocimentos,
+  .section-quote {
+    padding: 150px 100px 150px;
+  }
+  .container-projects,
+  .list-footer {
+    flex-wrap: wrap;
+    margin: 0;
+  }
 }

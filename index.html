@@ -13,9 +13,11 @@
 
 <body>
     <!-- Head - Hola / Conocimentos / Proyectos / Contacto -->
+
     <header>
+
         <nav>
-            <ul class="barra-nav">
+            <ul class="menu">
                 <li><a class="link-nav" href="#about">HOLA</a></li>
                 <li><a class="link-nav" href="#skills">CONOCIMENTOS</a></li>
                 <li><a class="link-nav" href="#projects">PROYECTOS</a></li>
@@ -24,6 +26,19 @@
                 </li>
             </ul>
         </nav>
+
+        <nav class="container-responsive">
+            <div class="menu-responsive hidden">
+                <ul>
+                    <li><a href="#about">HOLA</a></li>
+                    <li><a href="#skills">CONOCIMENTOS</a></li>
+                    <li><a href="#projects">PROYECTOS</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
 
     <!-- Section1 - Hola, Mi nombre es ... -->
@@ -45,34 +60,34 @@
     <section class="section-conocimentos">
         <div class="init-skills" id="skills">
 
-            <h2 class="h2-skills">Mis conocimentos</h2>
+            <h2 class="title-principal-skills">Mis conocimentos</h2>
             <p class="text-skills">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem veritatis architecto atque consectetur rerum. Cum laborum officia itaque veritatis?</p>
 
             <div class="reglas-skills">
 
                 <div class="info-skills">
                     <img src="image/img-html5.png">
-                    <p class="title-skills">HTML 5</p>
+                    <p class="title-interno-skills">HTML 5</p>
                 </div>
                 <div class="info-skills">
                     <img src="image/img-css3.png">
-                    <p class="title-skills">CSS 3</p>
+                    <p class="title-interno-skills">CSS 3</p>
                 </div>
                 <div class="info-skills">
                     <img src="image/img-sass.png">
-                    <p class="title-skills">Sass</p>
+                    <p class="title-interno-skills">Sass</p>
                 </div>
                 <div class="info-skills">
                     <img src="image/img-javascript.png">
-                    <p class="title-skills">JavaScript</p>
+                    <p class="title-interno-skills">JavaScript</p>
                 </div>
                 <div class="info-skills">
                     <img src="image/img-react.png">
-                    <p class="title-skills">React</p>
+                    <p class="title-interno-skills">React</p>
                 </div>
                 <div class="info-skills">
                     <img src="image/img-git.png">
-                    <p class="title-skills">Git</p>
+                    <p class="title-interno-skills">Git</p>
                 </div>
             </div>
         </div>
@@ -84,16 +99,16 @@
         <div class="reglas-quote">
             <i class="fa fa-magic fa-7x"></i>
             <p class="text-quote">Visual Studio es PURO AMOR!</p>
-            <h2 class="h2-quote">Malena Rey.</h2>
+            <h2 class="title-quote">Malena Rey.</h2>
         </div>
     </section>
 
     <!-- Section - Mis proyectos ... -->
     <section class="section-proyectos">
         <div class="init-projects" id="projects">
-            <h2 class="h2-projects">Mis Proyectos</h2>
+            <h2 class="title-principal-projects">Mis Proyectos</h2>
 
-            <div class="nav-projects">
+            <div class="container-projects">
                 <button class="button menu-projects">Todos</button>
                 <button class="menu-projects">HTML/CSS</button>
                 <button class="menu-projects">JavaScript</button>
@@ -103,32 +118,32 @@
             <div class="reglas-projects">
                 <div class="info-projects">
                     <img src="image/img-portfolio.png">
-                    <p class="title-projects">Portfolio</p>
+                    <p class="title-interno-projects">Portfolio</p>
                 </div>
 
                 <div class="info-projects">
                     <img src="image/img-tienda.png">
-                    <p class="title-projects">Tienda</p>
+                    <p class="title-interno-projects">Tienda</p>
                 </div>
                 <div class="info-projects">
                     <img src="image/img-juego.png">
-                    <p class="title-projects">Juego de la memoria</p>
+                    <p class="title-interno-projects">Match 3</p>
                 </div>
                 <div class="info-projects">
                     <img src="image/img-gastos.png">
-                    <p class="title-projects">Controlador de gastos</p>
+                    <p class="title-interno-projects">Controlador de gastos</p>
                 </div>
                 <div class="info-projects">
                     <img src="image/img-reu.png">
-                    <p class="title-projects">Administrados de reuniones</p>
+                    <p class="title-interno-projects">Administrados de reuniones</p>
                 </div>
                 <div class="info-projects">
                     <img src="image/img-app.png">
-                    <p class="title-projects">Todo App</p>
+                    <p class="title-interno-projects">Todo App</p>
                 </div>
                 <div class="info-projects">
                     <img src="image/img-peli.png">
-                    <p class="title-projects">Buscador de películas</p>
+                    <p class="title-interno-projects">Buscador de películas</p>
                 </div>
 
             </div>
@@ -137,7 +152,7 @@
     <!-- Footer ... -->
     <footer>
         <nav>
-            <ul class="nav-footer">
+            <ul class="list-footer">
                 <li>
                     <a href="#about" class="link-nav">HOLA</a>
                 </li>
@@ -153,7 +168,7 @@
             </ul>
         </nav>
 
-        <ul class="nav-footer" id="contact">
+        <ul class="list-footer" id="contact">
             <li>
                 <a href="https://twitter.com/nathavic" target="_blank">
                     <img src="image/icons8-twitter.svg">
@@ -175,6 +190,7 @@
         </ul>
         <p> Hecho con ❤️ por Nathalia Viccari con ayuda Malena Rey en Ada. </p>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
